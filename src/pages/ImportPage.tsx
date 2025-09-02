@@ -22,7 +22,7 @@ function normalizeSkills(v: string): string[] {
 }
 
 export default function ImportPage() {
-  const [rawCsv, setRawCsv] = useState<string>("");
+  const [, setRawCsv] = useState<string>("");
   const [rows, setRows] = useState<string[][]>([]);
   const [headers, setHeaders] = useState<string[]>([]);
   const [message, setMessage] = useState<string>("");

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import BackgroundDecor from "../components/BackgroundDecor";
 import { fetchCandidates, updateCandidate } from "../services/candidates";
-import type { Candidate, PipelineStage } from "../types";
+import type { Candidate } from "../types";
 
 export default function EditCandidatePage() {
   const { id } = useParams<{ id: string }>();
