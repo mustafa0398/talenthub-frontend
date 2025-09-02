@@ -13,7 +13,7 @@ export type CandidateStatsResponse = {
 };
 
 const API_BASE =
-  (import.meta.env.VITE_API_BASE as string | undefined)?.trim() ||
+  (import.meta.env.VITE_API_URL as string | undefined)?.trim() ||
   "http://localhost:8080/api"; 
 
 export async function fetchStats(): Promise<CandidateStatsResponse> {
